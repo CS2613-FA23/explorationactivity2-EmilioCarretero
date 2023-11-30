@@ -20,4 +20,4 @@
 ### Question 4
 - Sample input would be a latitude and longitude values as floats. Ex: (45.9636, -66.6431) - Fredericton, NB
 
-![Here is some sampe output:](/UNB/CS2613/EA/Output.png "Sample Output")
+![Here is some sampe output:](Output.png "Sample Output")
