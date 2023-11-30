@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet Exploration Activity</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <style>
+        body {
+            margin: 0;
+        }
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+        #map-container {
+            position: relative;
+            height: 100vh;
+        }
+        #controls-box {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /*move to top*/
+            z-index: 1000;
+        }
+        input {
+            padding: 8px;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 8px 46px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="map-container">
+        <div id="controls-box">
+            <input type="text" id="latitude" placeholder="Enter latitude" />
+            <br>
+            <input type="text" id="longitude" placeholder="Enter longitude" />
+            <br>
+            <button onclick="updateMarker()">Update Marker</button>
+        </div>
+
+        <div id="map"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="EA2.js"></script>
+</body>
+</html>
